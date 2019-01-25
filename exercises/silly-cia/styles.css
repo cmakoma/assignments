@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;}
+h1 {
+    color : darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+p{
+    line-height: 25px;
+}
+#uppercase{
+    text-transform: uppercase;
+}
+img{
+    float : left;
+    height: 200px;
+    width: 200px;
+}
+a{
+    text-decoration: none;
+}
