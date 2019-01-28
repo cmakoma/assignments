@@ -21,4 +21,15 @@ h1{
 article{
     display: inline-block;
     width: 30%;
+
+}
+
+
+.line1{
+    height: 4px;
+    color: darkblue;
+    background-color: black;
+    border-width: 5px;
+
+
 }
