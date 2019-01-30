@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+    height: 100px;
+    border: 3px white solid;
+    width: 99%
+}
+
+.b1{
+    background-color: #ffc4d7;
+    
+}
+ 
+.b2{
+        background-color: #ff0085;
+        
+}
+
+.b3{
+    background-color: #6ad1db;
+    
+}
+
+.b4{
+    background-color: #76cb00;
+    
+}
+
+.b5{
+    background-color: #f96500;
+    
+}

@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;}
+    
+
+.pink{
+    background-color: #F5C6D6;
+    height: 200px;
+    margin: 5px
+   
+}
+
+.reddish{
+    background-color: #EE2E84;
+    height: 200px;
+    width: 24.2%;
+    display: inline-block;
+    margin: 5px
+}
+
+.blue{
+    background-color: #85CFD8;
+    height: 200px;
+    width: 49%;
+    display: inline-block;
+    margin: 5px
+
+}
+
+.green{
+    background-color: #8DC63F;
+    height: 200px ;
+    display: inline-block;
+    margin: 5px;
+    width: 65%;
+}
+
+.orange{
+    background-color: #E76E34;
+    height: 200px;
+    display: inline-block;
+    margin: 5px;
+    width: 33%;
+}
+
+
