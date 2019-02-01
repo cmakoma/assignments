@@ -1,0 +1,45 @@
+form{
+    position: relative;
+    width: 700px;
+    border: 10px solid blue;
+    border-radius: 12px;
+    margin: 0px auto;
+    padding: 20px 20px 100px 20px;  
+}
+
+.inputs{
+  background: rgb(15, 201, 207);
+  width: 90%;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 7px;
+ 
+}
+
+.design{
+    position: relative;
+    width: 40%;
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 4px 0px 12px black inset;
+}
+
+.bdesign{
+    position: relative;
+    width: 2%;
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 4px 0px 12px blueviolet;
+}
+
+
+p{
+    display: inline-block
+}
+
+.result{
+    background-color: red;
+    padding: 2px;
+}

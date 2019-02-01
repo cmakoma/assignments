@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = "calc">
+        <form name = "let">
+            <input type="text" name = "result" placeholder = "0"/>
+            <br>
+            
+            <input type="button" value=" 1 " onclick="let.result.value += '1'" />
+            <input type="button" value=" 2 " onclick="let.result.value += '2'" />
+            <input type="button" value=" 3 " onclick="let.result.value += '3'" />
+            <input type="button" value=" + " onclick="let.result.value += '+'" />
+            <br/>
+            
+            <input type="button" value=" 4 " onclick="let.result.value += '4'" />
+            <input type="button" value=" 5 " onclick="let.result.value += '5'" />
+            <input type="button" value=" 6 " onclick="let.result.value += '6'" />
+            <input type="button" value=" - " onclick="let.result.value += '-'" />
+            </br>
+          
+            <input type="button" value=" 7 " onclick="let.result.value += '7'" />
+            <input type="button" value=" 8 " onclick="let.result.value += '8'" />
+            <input type="button" value=" 9 " onclick="let.result.value += '9'" />
+            <input type="button" value=" x " onclick="let.result.value += '*'" />
+            </br>
+        
+            <input type="button" value=" c " onclick="let.result.value = ''" />
+            <input type="button" value=" 0 " onclick="let.result.value += '0'" />
+            <input type="button" value=" = " onclick="let.result.value = eval(let.result.value)" />
+            <input type="button" value=" / " onclick="let.result.value += '/'" />
+            </br>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

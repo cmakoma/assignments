@@ -129,13 +129,6 @@
     background-color: #0069ac;
     
 }
-/* .sww{
-    width: 300px;
-    height: 300px;
-    background-color: #ff0000;
-    margin-left: 200px;
-    margin-top: 200px  
-} */
 
 .swwt{
     width: 80px;
@@ -155,4 +148,99 @@
     height: 250px;
     background-color: #ffcb00;
     margin-left: 280px; 
+}
+
+
+.gambia{
+    width: 900px;
+    height: 616px;
+    border: 8px #e6f6ff solid;
+}
+
+.gar{
+    width: 884px;
+    height: 200px;
+    background-color: #e00018;
+   
+}
+
+.gaw{
+    width: 884px;
+    height: 30px;
+    background-color: #ffffff;
+ 
+}
+
+.gab{
+    width: 884px;
+    height: 140px;
+    background-color:#131692 ;
+   
+} 
+
+.gag{
+    width: 884px;
+    height: 200px;
+    background-color: #197916;
+    
+} 
+
+
+.tonga{
+    width: 1200px;
+    height: 616px;
+    border: 8px #e6f6ff solid;
+    background-color: #d20000 ;
+}
+
+.tw{
+    width: 500px;
+    height: 308px;
+    background-color: #ffffff;
+    position: absolute
+} 
+
+.tr1{
+    width: 80px;
+    height: 80px;
+    background-color: #d20000;
+    margin-top: 30px;
+    margin-left: 200px;
+    
+    
+} 
+
+.tr2{
+    width: 240px;
+    height: 80px;
+    background-color: #d20000;
+    margin-left: 120px;
+    
+    
+} 
+
+.tr3{
+    width: 80px;
+    height: 80px;
+    background-color: #d20000;
+    margin-left: 200px;
+    
+   
+} 
+
+
+.japan{
+    width: 900px;
+    height: 616px;
+    border: 8px #e6f6ff solid;
+    background-color: #ffffff ;
+}
+
+.jr{
+    width: 340px;
+    height: 340px;
+    background-color: #cd0027;
+    margin: auto;
+    margin-top: 130px;
+    border-radius: 50%;
 }
