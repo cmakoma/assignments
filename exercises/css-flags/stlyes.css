@@ -325,6 +325,7 @@
     width: 700px;
     height: 175px;
     background-color: white; 
+    position: relative;
  
     
 }
@@ -341,7 +342,45 @@
     background-color: #f14400 ;
     margin: auto;
     border-radius: 50%;
-    margin-top: 40px;
+    margin-top: 25px;
     position: relative;
    
+}
+
+.maldives{
+    width: 916px;
+    height: 616px;
+    border: 8px #e6f6ff solid;
+    background-color: #e5002c; 
+   
+}
+
+.mgr{
+    width: 700px;
+    height: 400px;
+    background-color: #008132; 
+    margin:auto;
+    margin-top: 100px;
+    
+}
+
+
+.mwh{
+    width: 220px;
+    height: 220px;
+    background-color: #ffffff; 
+    margin:auto;
+    border-radius: 50%;
+    position: relative;
+    top: 90px;
+    left:50px;
+
+}
+
+.mg2{
+    width: 220px;
+    height: 220px;
+    background-color:#008132 ; 
+    margin-left:50px;
+    border-radius: 50%;
 }
