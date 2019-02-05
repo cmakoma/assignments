@@ -244,3 +244,104 @@
     margin-top: 130px;
     border-radius: 50%;
 }
+
+
+
+
+.greece{
+    width: 916px;
+    height: 646px;
+    border: 8px #e6f6ff solid;
+   
+}
+.bl{
+    width: 900px;
+    height: 70px;
+    background-color: #005db5;
+}
+
+.wh{
+    width: 900px;
+    height: 70px;
+    background-color: white;
+
+}
+
+.sq{
+    width: 350px;
+    height: 350px;
+    background-color: #005db5;
+    display: inline-block;
+    
+    
+
+}
+.blr{
+    width: 550px;
+    height: 70px;
+    background-color: #005db5; 
+    
+}
+
+.whr{
+    width: 550px;
+    height: 70px;
+    background-color: white;
+   
+
+}
+.t{
+    display: inline-block;
+}
+
+.sq1{
+    width:70px;
+    height: 140px;
+    margin-left: 140px;
+    background-color: white;
+}
+
+.sq2{
+    width:350px;
+    height: 70px;
+    background-color: white;
+}
+
+
+.niger{
+    width: 716px;
+    height: 616px;
+    border: 8px #e6f6ff solid;
+   
+}
+
+.no{
+    width: 700px;
+    height: 200px;
+    background-color: #f14400 ;
+    
+}
+.nw{
+    width: 700px;
+    height: 175px;
+    background-color: white; 
+ 
+    
+}
+.ng{
+    width: 700px;
+    height: 200px;
+    background-color: #00b400; 
+    
+}
+
+.nwo{
+    width: 150px;
+    height: 150px;
+    background-color: #f14400 ;
+    margin: auto;
+    border-radius: 50%;
+    margin-top: 40px;
+    position: relative;
+   
+}

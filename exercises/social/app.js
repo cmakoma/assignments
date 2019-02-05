@@ -15,9 +15,9 @@ var profile = {
         }
     ],
     ageDifference : function(){
-        for (var i = 0; i < 2; i++) {
+        for (var i = 0; i < profile.siblings.length; i++) {
             var years = (profile.age - profile.siblings[i].age)
-            console.log(years);
+            console.log("christian is " + years  + " older than " + profile.siblings[i].firstName);
         };
         }
     

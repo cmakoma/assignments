@@ -1,0 +1,332 @@
+body{
+    background-image: url(https://i.pinimg.com/originals/4a/18/3c/4a183c1dcf0e901399b30ecb3e1612ae.png);
+    /* background-repeat: no-repeat; */
+    
+}
+
+#titre{
+    margin-left: 5%;
+    font-family: 'Stalinist One', cursive;
+    font-size: 500%
+
+}
+
+.img{
+    width: 500px;
+    height: 500px;
+}
+
+
+h1{
+    margin: auto;
+    display:inline-block;
+    font-family: 'Stalinist One', cursive;
+
+}
+
+h6{
+    margin: auto;
+    display:inline-block;
+    font-family: 'Stalinist One', cursive;
+    color: azure
+
+
+}
+
+.dis{
+    display: inline-block;
+    margin: auto;
+    width:33%;
+    margin-bottom: 100px;
+   
+    
+}
+
+input{
+    margin-left: 30px;
+    width: 200px;
+    border: black 3px solid;
+    
+
+}
+
+button{
+    width: 200px;
+    margin-left: 40%;
+    border: black 3px solid;
+    font-family: 'Stalinist One', cursive;
+    margin-bottom: 50px;
+
+}
+.res{
+    margin-left: 40%;
+    color: azure
+
+}
+
+@media (max-width: 1500px){
+    #titre{
+        margin-left: 5%;
+        font-family: 'Stalinist One', cursive;
+        font-size: 400%
+    
+    }
+    
+    .img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+    h1{
+        margin: auto;
+        display:inline-block;
+        font-family: 'Stalinist One', cursive;
+    
+    }
+    
+    h6{
+        margin: auto;
+        display:inline-block;
+        font-family: 'Stalinist One', cursive;
+        color: azure
+    
+    
+    }
+    
+    .dis{
+        display: inline-block;
+        margin: auto;
+        width:33%;
+        margin-bottom: 100px;
+       
+        
+    }
+    
+    input{
+        margin-left: 30px;
+        width: 200px;
+        border: black 3px solid;
+        
+    
+    }
+    
+    button{
+        width: 200px;
+        margin-left: 40%;
+        border: black 3px solid;
+        font-family: 'Stalinist One', cursive;
+        margin-bottom: 50px;
+    
+    }
+    .res{
+        margin-left: 30%;
+        color: azure
+    
+    }
+}
+
+@media (max-width:1200px){
+    #titre{
+        margin-left: 5%;
+        font-family: 'Stalinist One', cursive;
+        font-size: 200%
+    
+    }
+    
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+    h1{
+        margin: auto;
+        display:inline-block;
+        font-family: 'Stalinist One', cursive;
+        font-size:20px;
+    
+    }
+    
+    h6{
+        margin: auto;
+        display:inline-block;
+        font-family: 'Stalinist One', cursive;
+        color: azure
+    
+    
+    }
+    
+    .dis{
+        display: inline-block;
+        margin: auto;
+        width:33%;
+        margin-bottom: 150px;
+       
+        
+    }
+    
+    input{
+        margin-left: 30px;
+        width: 200px;
+        border: black 3px solid;
+        
+    
+    }
+    
+    button{
+        width: 200px;
+        margin-left: 40%;
+        border: black 3px solid;
+        font-family: 'Stalinist One', cursive;
+        margin-bottom: 80px;
+    
+    }
+    .res{
+        margin-left: 30%;
+        color: azure;
+        margin-bottom: 80px;
+
+    
+    }
+
+}
+
+
+@media (max-width:900px){
+    #titre{
+        margin-left: 5%;
+        font-family: 'Stalinist One', cursive;
+        font-size: 150%
+    
+    }
+    
+    .img{
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+    h1{
+        margin: auto;
+        display:inline-block;
+        font-family: 'Stalinist One', cursive;
+        font-size:20px;
+    
+    }
+    
+    h6{
+        margin: auto;
+        display:inline-block;
+        font-family: 'Stalinist One', cursive;
+        color: azure
+    
+    
+    }
+    
+    .dis{
+        display: inline-block;
+        margin: auto;
+        width:90%;
+        margin-bottom: 150px;
+        margin-left: 200px
+       
+        
+    }
+    
+    input{
+        margin-left: 30px;
+        width: 200px;
+        border: black 3px solid;
+        
+    
+    }
+    
+    button{
+        width: 200px;
+        margin-left: 35%;
+        border: black 3px solid;
+        font-family: 'Stalinist One', cursive;
+        margin-bottom: 80px;
+    
+    }
+    .res{
+        margin-left: 20%;
+        color: azure;
+        margin-bottom: 80px;
+
+    
+    }
+
+}
+
+
+@media (max-width:600px){
+    #titre{
+        margin-left: 5%;
+        font-family: 'Stalinist One', cursive;
+        font-size: 120%;
+        color:black;
+    
+    }
+    
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    
+    h1{
+        margin: auto;
+        display:inline-block;
+        font-family: 'Stalinist One', cursive;
+        font-size:20px;
+        color: azure
+    
+    }
+    
+    h6{
+        margin: auto;
+        display:inline-block;
+        font-family: 'Stalinist One', cursive;
+        color: azure
+    
+    
+    }
+    
+    .dis{
+        display: inline-block;
+        margin: auto;
+        width:90%;
+        margin-bottom: 120px;
+        margin-left: 50px
+       
+        
+    }
+    
+    input{
+        margin-left: 30px;
+        width: 200px;
+        border: black 3px solid;
+        
+    
+    }
+    
+    button{
+        width: 200px;
+        margin-left: 20%;
+        border: black 3px solid;
+        font-family: 'Stalinist One', cursive;
+        margin-bottom: 80px;
+    
+    }
+    .res{
+        margin-left: 20%;
+        color: azure;
+        margin-bottom: 80px;
+
+    
+    }
+
+
+}
