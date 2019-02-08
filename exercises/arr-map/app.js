@@ -60,7 +60,7 @@ persons=[
 
 // console.log(matrix)
 
-dom = persons.map(function(person){
-    return "<h1>" +person.name +"</h1><h2>"+person.age+"</h2>"
-})
-console.log(dom)
+// dom = persons.map(function(person){
+//     return "<h1>" +person.name +"</h1><h2>"+person.age+"</h2>"
+// })
+// console.log(dom)
