@@ -78,7 +78,8 @@ body{
       }
       .navbar #h{
           color: #213e4b; 
-           display: none;}
+           /* display: none; */
+          }
     
     
       .icon{
@@ -89,7 +90,10 @@ body{
       .image{
         width:380px;
         height:300px;
-        margin-left:20px;
+        
+    
+        
+
 
     }  
    article > h1{
@@ -178,7 +182,8 @@ body{
       }
       .navbar #h{
           color: #213e4b; 
-           display: none;}
+           /* display: none; */
+          }
     
     
       .icon{
@@ -189,7 +194,10 @@ body{
       .image{
         width:380px;
         height:300px;
-        margin-left:20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
 
     }  
    article > h1{
@@ -279,7 +287,8 @@ body{
       }
       .navbar #h{
           color: #213e4b; 
-           display: none;}
+           /* display: none; */
+          }
     
     
       .icon{
@@ -290,7 +299,10 @@ body{
       .image{
         width:380px;
         height:300px;
-        margin-left:20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
 
     }  
    article > h1{
@@ -380,7 +392,8 @@ body{
       }
       .navbar #h{
           color: #213e4b; 
-           display: none;}
+           /* display: none; */
+          }
     
     
       .icon{
@@ -390,8 +403,11 @@ body{
 
       .image{
         width:380px;
-        height:300px;
-        margin-left:20px;
+        height:400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;                
 
     }  
    article > h1{

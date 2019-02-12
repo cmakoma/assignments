@@ -1,0 +1,33 @@
+{
+    "appetizers":[{
+
+        "name":"nacho",
+        "ingredients":["beef","taco","salsa"],
+        "description":"This makes a huge meal-sized tray of nachos with lots of good stuff! You can adjust ingredient quantities to suit your preference."
+        },
+        {
+        "name":"buffalo wings",
+        "ingredients":["chicken wings","cayenne pepper","salt","paprika"],
+        "description":"buffalo wings are easy, with less mess and cleanup."  
+        }] ,
+    "cold sandwiches":[{
+        "name":"italian",
+        "ingredients":["mayo","cheese","salt","salami"],
+        "description":"repared using a long bread roll or bun with meats such as salami, mortadella, capicolla and ham along with provolone"
+        },
+        {
+            "name":"french dip",
+            "ingredients":["onion","cooking spray","salt","rostated beef"],
+            "description":"mortadella, capicolla and ham along with provolone"
+        }],
+    "hot sandwiches":[{
+        "name":"burger",
+        "ingredients":["avocado","pepper","salt","paprika"],
+        "description":""
+        },{
+        "name":"buffalo wings",
+        "ingredients":["chicken wings","cayenne pepper","salt","paprika"],
+        "description":""
+        }]
+    
+}
