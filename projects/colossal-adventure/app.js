@@ -3,9 +3,9 @@ var readline = require('readline-sync')
 var isAlive = true;
 var hasWon = false;
 
-var player1Name = readline.question("what is your name?: ")
+var player1Name = readline.question(`what is your name?: \n`)
 
-// Character Creation
+
 
 function Player (name){
     this.name = name;
@@ -31,26 +31,28 @@ var enemy2 = new Enemy('Hinox', randomMedium, 50);
 var enemy3 = new Enemy('Wizzrobe',randomHigh,75)
 var enemies = [enemy1, enemy2,enemy3]
 
-// intro console.logs
-console.log('welcome to the game ' + player1Name)
+
+console.log(`welcome to the game  ${player1Name} \n`)
 
 while(isAlive && !hasWon){
     var action = readline.keyIn("What would you like to do? [w] Walk, [p] Print Inventory and hp, [q] Quit Game ", {limit: 'wpq'})
-    if(action === 'w'){
-        walk()
-    }else if (action === 'p'){
+    if(action === 'w'||action === 'W'){
+        walk() 
+        
+    }else if (action === 'p'|| action === 'P'){
         print()
+        
     }else{
-        console.log("see you next time "+ player1.name)
+        console.log(`SEE YOU NEXT TIME ${player1.name} \n`)
             isAlive = false
     }
 }
 
 function print(){
     if(player1.items == ""){
-        console.log(" your invetory is empty and your hp is " + player1.hp)
+        console.log(` your invetory is empty and your hp is   ${player1.hp} \n`)
     }else{
-        console.log(" you have "+player1.items+" in your invetory and your hp is " + player1.hp )
+        console.log(` you have ${player1.items} in your invetory and your hp is  ${player1.hp}\n` )
     }
 }
 
@@ -59,20 +61,26 @@ function walk (){
     var random = Math.floor(Math.random()*3)
     if (random === 1){
         encounter()
+
     }else {
-        console.log('You passed a pretty tree')
+        console.log('YOU PASSED A PRETTY GOOD TREE, KEEP WALKING  \n')
+
     }
 }
 
 function encounter (){
     var action = readline.keyIn("Would you like to [r] Run or [f] Fight? ", {limit: 'rf'})
-    if(action === 'r'){
+    if(action === 'r' || action === 'R'){
         run()
+
     }else {
         var enemy = enemySelect()
-        while(enemy.hp > 0 && player1.hp > 0){
+        if(enemy.hp > 0 && player1.hp > 0){
             fight(enemy)
-        }if(player1.hp <= 0){
+            
+        }
+        
+        if(player1.hp <= 0 && enemy.hp > 0){
             console.log(`
                                                                               
             dddddddd                                                  dddddddd
@@ -99,11 +107,11 @@ d::::::ddddd::::::dde::::::::e          a::::a    a:::::a d::::::ddddd::::::dd
                                                                               
                                                                               
                                                                               
-`)
+\n`)
             isAlive = false;
         }
-        if(enemy.hp <= 0){
-            console.log('good job you killed ' + enemy.name)
+        else if(enemy.hp <= 0 && player1.hp > 0){
+            console.log(`good job you killed   ${enemy.name}\n`)
             var index = enemies.indexOf(enemy)
             enemies.splice(index,1)
 
@@ -134,10 +142,11 @@ www             www           iiiiiiii  nnnnnn    nnnnnn
                                         
                                         
                                         
-`)
+\n`)
                 isAlive = false
             }
             gain()
+    
         }
     }
 }
@@ -147,16 +156,19 @@ function gain(){
     if(random === 0){
         player1.items.push("blowgun")
         player1.hp += 10
-        console.log("hey "+player1.name+", you have activated the blowgun and 10 hp ")
+        console.log(`hey ${player1.name}, you have activated the blowgun and 10 hp \n`)
+
     }else if(random === 1){
         player1.items.push("lance")
         player1.hp += 5
-        console.log("hey "+player1.name+", you have activated the lance and 5 hp ")
+        console.log(`hey ${player1.name}, you have activated the lance and 5 hp \n`)
+
 
     }else{
         player1.items.push("sabre")
         player1.hp += 2
-        console.log("hey "+player1.name+", you have activated the sabre and 3 hp ")
+        console.log(`hey ${player1.name}, you have activated the sabre and 3 hp `)
+
 
     }
 }
@@ -165,11 +177,14 @@ function fight (enemy){
     var random = Math.floor(Math.random()*3)
     if(random === 1){
         miss()
+
     }else {
         player1.hp -= enemy.attack
         enemy.hp -= player1.attack
-        console.log(`Hey ${player1.name} your hp is now ${player1.hp}`)
-        console.log(`You hit ${enemy.name} and their hp is ${enemy.hp}`)
+        console.log(`You hit ${enemy.name} and their hp is ${enemy.hp} \n`)
+        console.log(`Hey ${player1.name} your hp is now ${player1.hp} \n`)
+        
+
     }
 }
 
@@ -179,16 +194,18 @@ function enemySelect (){
 }
 
 function miss (){
-    console.log('you missed ' +player1.name)
+    console.log(`OOOH NOOOH ${player1.name}, YOU MISSED \n`)
 }
 
 function run(){
     var random = Math.floor(Math.random()*2)
     if (random === 0){
-        console.log("sorry " + player1.name + " you can't escape, you have to fight or run again")
+        console.log(`sorry  ${player1.name}   you can't escape, you have to fight or run again \n`)
         encounter()
+
     }else{
-        console.log("yeyyy " + player1.name + " you have found an escape")
+        console.log(`yeyyy  ${player1.name}  you have found an escape \n`)
         walk()
+
     }
 }

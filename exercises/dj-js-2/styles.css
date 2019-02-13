@@ -1,0 +1,111 @@
+body{
+    background-color: black
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border: 1px solid #333;
+    box-shadow: 10px 10px 5px 0 #999;
+    border-radius: 10%;
+    display: inline-block;
+    margin-top:50px;
+    margin-right: 75px;
+    margin-left: 75px;
+      
+}
+
+.b1{
+    background-color: aquamarine;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;  
+}
+
+
+.b1:hover {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: cyan;
+    
+}
+
+.b2{
+    background-color: rgb(155, 127, 255);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;  
+}
+
+
+.b2:hover {
+    box-shadow: none;
+    border-radius: 40%;
+    background-color: rgba(255, 0, 0, 0.308);
+    
+}
+
+.b3{
+    background-color: rgb(255, 157, 127);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;  
+}
+
+
+.b3:hover {
+    box-shadow: none;
+    border: 20px solid yellow;
+    border-radius: none;
+    background-color: cyan;
+    
+}
+
+.b4{
+    background-color: rgb(255, 127, 133);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease; 
+    transition-delay: 0.5s 
+}
+
+
+.b4:hover {
+    width:200px;
+    height:200px;
+    box-shadow: none;
+    border-radius: 0;
+    background-color: cyan;
+    
+}
+
+.b5{
+    background-color: rgb(49, 10, 221);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;  
+}
+
+
+.b5:hover {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: rgba(255, 0, 212, 0.479);
+    
+}
+
+.b6{
+    background-color: rgb(253, 255, 127);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;  
+}
+
+
+.b6:hover {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: rgb(255, 153, 0);
+    
+}
