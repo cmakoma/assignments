@@ -1,0 +1,148 @@
+/* .container{
+    height: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #ffeead;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 40px 40px auto 40px 40px;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas:
+     "h h h h h h"
+     "s1 s1 s1 s1 s1 s1"
+     "c c c c c c"
+     "s2 s2 s2 s2 s2 s2"
+     "f f f f f f"
+}
+
+
+.header{
+    grid-area: h;
+}
+
+.sidebar1{
+    grid-area: s1; 
+}
+
+.content{
+    grid-area: c;
+}
+.sidebar2{
+    grid-area: s2; 
+}
+
+.footer{
+    grid-area: f;
+}
+
+
+
+html,body{
+    background-color: #ffeead;
+    margin: 10px; 
+}
+
+.container>div{
+    border-radius: 5px
+}
+
+.container>div:nth-child(1n){
+    background-color: #ed0405;
+}
+
+.container > div:nth-child(2n) {
+    background-color: #3b00ff;
+  }
+  
+  .container > div:nth-child(3n) {
+        background-color: #2b7f01;
+  }
+  
+  .container > div:nth-child(4n) {
+        background-color: #7f0080;
+  }
+
+  .container > div:nth-child(5n) {
+    background-color: grey;
+}
+
+@media(min-width: 425px){
+    .container{
+        
+        grid-template-areas:
+         "h h h h h h"
+         "s1 s1 c c c c"
+         "s1 s1 c c c c"
+         "s2 s2 s2 s2 s2 s2"
+         "f f f f f f"
+    }
+    
+}
+@media(min-width: 1024px){
+    .container{
+        grid-template-rows: 40px auto 40px;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-areas:
+         "h h h h h h h h"
+         "s1 s1 c c c c s2 s2"
+         "s1 s1 c c c c s2 s2"
+         "f f f f f f f f"
+    }
+     */
+/* } */
+/* .red{
+    grid-column: 1/5;
+    grid-row: 1/2
+}
+
+.blue{
+    grid-column: 1/3; 
+    grid-row:2/4
+}
+.green{
+    grid-column: 3/5 
+}
+
+.purple{
+    grid-column: 2/5 
+}
+.yellow{
+    grid-column: 1/5
+} */
+
+.container{
+    height: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #ffeead;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat()
+
+}
+
+
+.container>div:nth-child(1n){
+    background-color: blue
+}
+.container>div:nth-child(2n){
+    background-color: red
+}
+.container>div:nth-child(3n){
+    background-color: blue
+}
+.container>div:nth-child(4n){
+    background-color: red
+}
+.container>div:nth-child(5n){
+    background-color: red
+}
+.container>div:nth-child(6n){
+    background-color: blue
+}
+.container>div:nth-child(7n){
+    background-color: red
+}
+.container>div:nth-child(8n){
+    background-color: blue
+}

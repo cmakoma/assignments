@@ -8,6 +8,7 @@ function renderTodos(todos){
         var parent = document.createElement("div");
         parent.className = "todo";
         parent.id = todo._id
+        
     
 
 
@@ -24,6 +25,13 @@ function renderTodos(todos){
         input.className = "checkBox"
         input.type = "checkbox"
         parent.appendChild(input)
+        input.value = todo.completed 
+
+        if(todo.completed){
+            parent.classList.toggle("strikened")
+            input.checked = true;
+        };
+        
 
         var botton = document.createElement("button")
         botton.className = "botton"
@@ -33,16 +41,29 @@ function renderTodos(todos){
         input.addEventListener("click", function (e){
            
             e.target.parentNode.classList.toggle("strikened");
-            todos.forEach(function (todo){
-                todo.completed = todo.completed ? false : true;
+            // todos.forEach(function (todo){
+            //    todo.completed = todo.completed ? false : true;
+            // })
+            console.log( e.target.parentNode)
+            if(e.target.parentNode.classList == "todo strikened"){
+                var change = { "completed": true}
+            }else{
+                var change = { "completed": false}
+            }
+            axios.put(`https://api.vschool.io/christian/todo/${e.target.parentElement.id}`, change).then(function(response){
+                console.log(response.data)
+            }).catch(function(error){
+                console.log(error)
             })
         })
         
-         if(todo.completed){
-            parent.classList.toggle("strikened")
-            input.checked = true;
-        };
-        
+       
+       
+       
+       
+       
+       
+       
         botton.addEventListener("click",function(e){
             e.preventDefault()
            axios.delete(`https://api.vschool.io/christian/todo/${e.target.parentElement.id}`).then(function(){
