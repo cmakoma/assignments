@@ -1,0 +1,42 @@
+@font-face{
+    font-family: julius;
+    src: url(fonts/JuliusSansone)
+}
+
+@font-face{
+    font-family: libre1;
+    src: url(fonts/libreBaskerVille1)
+}
+
+@font-face{
+    font-family: libre2;
+    src: url(fonts/libreBaskerVille2)
+}
+
+@font-face{
+    font-family: verde;
+    src: url(fonts/VerdeModerna)
+}
+header {
+    height: 230px;
+    grid-area: head;
+    background-image: url(image/contours@2x.png), url(image/noise.png), url(image/gridlines.png), url(image/huntington.jpg);
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-size: auto, auto, auto, cover;
+    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:  
+      "headLeft headLeft headRight"
+}
+
+
+header>h1{
+    font-family: julius;
+    color: white
+}
+
+
+

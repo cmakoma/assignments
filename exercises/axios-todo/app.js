@@ -48,7 +48,7 @@ function renderTodos(todos){
             if(e.target.parentNode.classList == "todo strikened"){
                 var change = { "completed": true}
             }else{
-                var change = { "completed": false}
+                var change = { "completed": false} 
             }
             axios.put(`https://api.vschool.io/christian/todo/${e.target.parentElement.id}`, change).then(function(response){
                 console.log(response.data)
