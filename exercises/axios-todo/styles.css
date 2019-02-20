@@ -1,3 +1,14 @@
+body{
+    background-color: lightblue
+}
+
+h1{
+    font-size: 3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+    text-align: center
+
+}
 .image{
     width:400px;
     height: 400px;
