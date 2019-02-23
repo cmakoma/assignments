@@ -291,9 +291,9 @@ footer#a5{
     color: #616857;
 }
 
-/* .div6>hr{
+.div6>hr{
     margin: 0px;
-} */
+}
 
 
 
@@ -340,9 +340,9 @@ footer#a5{
     .div6>div{
         width:50%;
     }
-    /* .div6>hr{
+    .div6>hr{
         width:100%
-    } */
+    }
     .div6>.del{
         display: none
     }
@@ -397,6 +397,7 @@ footer#a5{
         text-decoration: none;
         color: #88a086
     }
+    
 }
 
 @media(min-width:1131px){
