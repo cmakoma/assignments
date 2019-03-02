@@ -6,6 +6,35 @@ body{
     
 }
 
-input{
+form{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px
+}
+
+form>input{
+    margin: 20px;
     width:300px
+}
+
+form>.about{
+    margin-left: -345px;
+    width: 665px;
+    height: 100px;
+}
+
+form>.button{
+    margin-bottom: 30px;
+    margin-left: 300px
+}
+
+.badge{
+    border: 2px solid black;
+    margin-top:40px;
+}
+
+.badge>header>h1{
+
+    margin-top: 0
 }

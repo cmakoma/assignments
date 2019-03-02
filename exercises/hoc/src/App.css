@@ -1,0 +1,23 @@
+.cardContainer {
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+}
+
+
+.open {
+  display: block;
+}
+
+.closed {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  
+  display: none;
+}
