@@ -67,12 +67,12 @@ class Form extends Component{
             
             <React.Fragment>
             <form onSubmit={this.handleSubmit}>
-                <input type="text" placeholder="First Name" name="firstName" value={firstName} onChange={this.handleChange}></input>
-                <input type="text" placeholder="Last Name" name="lastName" value={lastName} onChange={this.handleChange}></input>
-                <input type="email" placeholder="Email" name="email" value={email} onChange={this.handleChange}></input>
-                <input type="text" placeholder="Place of Birth" name="birth" value={birth} onChange={this.handleChange}></input>
-                <input type="number" placeholder="Phone" name="phone" value={phone} onChange={this.handleChange}></input>
-                <input type="text" placeholder="Favorite Food" name="food" value={food} onChange={this.handleChange}></input>
+                <input type="text" placeholder="First Name" name="firstName" value={firstName} onChange={this.handleChange} required></input>
+                <input type="text" placeholder="Last Name" name="lastName" value={lastName} onChange={this.handleChange} required></input>
+                <input type="email" placeholder="Email" name="email" value={email} onChange={this.handleChange} required></input>
+                <input type="text" placeholder="Place of Birth" name="birth" value={birth} onChange={this.handleChange} required></input>
+                <input type="number" placeholder="Phone" name="phone" value={phone} onChange={this.handleChange} required></input>
+                <input type="text" placeholder="Favorite Food" name="food" value={food} onChange={this.handleChange} required></input>
                 <br></br>
                 <input type="text" placeholder="Tell us about yourself" name="about" value={about} onChange={this.handleChange} className="about"></input>
                 

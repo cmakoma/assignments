@@ -1,0 +1,17 @@
+body{
+  margin:0px;
+  background-color: #dadbda
+}
+.headerDiv{
+  background-color: black
+}
+.img{
+  width:200px
+}
+.headerTitle{
+  display: inline-block;
+  color: red;
+  position: relative;
+  bottom: 40px;
+  font-size:20px 
+}
