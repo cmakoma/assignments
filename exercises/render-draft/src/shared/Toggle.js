@@ -17,7 +17,7 @@ class Toggle extends Component {
                isToggled: this.state.isToggled,
                toggler: this.toggler 
         }
-        return this.props.render(stuffFromToggle);
+        return this.props.render(stuffFromToggle); 
     }
 }
 
