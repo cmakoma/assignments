@@ -1,0 +1,16 @@
+.header{
+    height:80px;
+    background-image: url(https://media.giphy.com/media/PvMKNlIlQtXEI/giphy.gif);
+    margin:0px;
+    background-size:cover
+}
+
+h1{
+    margin:0px; 
+    position: relative;
+    font-family: cursive;
+    color: white;
+    font-size: 50px;
+    left:50px
+
+}
