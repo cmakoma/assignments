@@ -4,3 +4,20 @@
    grid-gap: 0;
    
 }
+h3{
+   margin-left: 50px;
+   color: aliceblue;
+   font-family: cursive;
+   width: 70%;
+
+}
+.img{
+   margin-left: 50px;
+}
+
+@media(max-width:425px){
+   .suggestions{
+      display: block;
+   }
+
+}

@@ -48,14 +48,14 @@ class Search extends Component {
             </div>
 
             <div className="result">
-                <h1>flight number: {SM.flight_number}</h1>
-                <h1>mission name: {SM.mission_name}</h1>
-                <h1>year: {SM.launch_year} </h1>
+                <h1>Flight number: {SM.flight_number}</h1>
+                <h1>Mission name: {SM.mission_name}</h1>
+                <h1>Year: {SM.launch_year} </h1>
                 <br></br>
                 <img src={SM.links ? SM.links.mission_patch_small : null} />
-                <p>lunch success: {SM.launch_success ? "True" : "False"}</p>
+                <p>Launch success: {SM.launch_success ? "True" : "False"}</p>
                 {SM.launch_failure_details ? <p>reason: {SM.launch_failure_details.reason }</p>:null}
-                 {SM.details ? <p>details: {SM.details} </p> : null}
+                 {SM.details ? <p>Details: {SM.details} </p> : null}
 
                 <iframe 
                     className="iframe"

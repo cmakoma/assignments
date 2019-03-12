@@ -1,6 +1,12 @@
 .selectSearch{
     text-align: center;
-    zoom: 3
+    zoom:1.4;
+    /* width:70%;
+    margin:auto */
+}
+
+.select{
+    width: 70%
 }
 
 .result{
@@ -14,5 +20,19 @@
     margin-left: 50px;
     width:70%;
     height:60vh;
+
 }
 
+@media(max-width:425px){
+    .result>h1{
+        font-size: 20px;
+        width: 80%
+    }
+    
+}
+@media(max-width:600px){
+    .iframe{
+        height:30vh;
+    
+    }
+}

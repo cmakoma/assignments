@@ -7,3 +7,10 @@ p{
     overflow: auto;
 
 }
+.image{
+    float: left;
+    height: 25vh;
+}
+.elon{
+    font-size: 20px
+}
