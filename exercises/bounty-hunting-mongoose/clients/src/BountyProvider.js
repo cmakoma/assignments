@@ -12,15 +12,37 @@ class bountyProvider extends Component {
 
     getBounties = () => {
         axios.get("/bounties").then(res => {
-            console.log(res.data)
+            // console.log(res.data)
             this.setState({
                 bounties: res.data
             })
         })
     }
+
+    postBounty = (newBounty) => {
+        axios.post("/bounties",newBounty).then(res => {
+            this.setState(prevState => ({
+                bounties: [...prevState.bounties, newBounty]
+            }))
+        })
+    }
+
+
+    
+    deleteBounty =(id)=>{
+        axios.delete(`/bounties/${id}`).then(res =>{
+            this.setState(prevState => ({
+                bounties: prevState.bounties.filter(bounty => bounty._id !== id)
+            }))
+        })
+    }
     render() {
         return (
-            <Provider value={{getBounties: this.getBounties}} >
+            <Provider value={{getBounties: this.getBounties,
+                              postBounty: this.postBounty,
+                              deleteBounty: this.deleteBounty,
+                              putBounty: this.putBounty,
+                             ...this.state}} >
                 {this.props.children}
             </Provider>
         );

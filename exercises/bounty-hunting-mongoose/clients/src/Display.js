@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {withBounties} from "./BountyProvider"
-// import Bounty from "./Bounty"
+import Bounty from "./Bounty"
 
 class Display extends Component {
    componentDidMount(){
@@ -8,10 +8,10 @@ class Display extends Component {
    }
     
     render() {
-        // const mappedBounties = this.props.bounties.map(bounty => <Bounty bounty={bounty}/>)
+        const mappedBounties = this.props.bounties.map(bounty => <Bounty key={bounty._id} bounty={bounty}/>)
         return (
             <div>
-                {/* {mappedBounties} */}
+                {mappedBounties}
             </div>
         );
     }

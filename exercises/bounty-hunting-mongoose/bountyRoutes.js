@@ -24,8 +24,6 @@ bountyRoute.route("/")
         
     })
 
-
-
 bountyRoute.route("/:_id")
 
 
