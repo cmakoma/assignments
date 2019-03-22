@@ -12,12 +12,12 @@ class bountyProvider extends Component {
 
     getBounties = () => {
         axios.get("/bounties").then(res => {
-            // console.log(res.data)
             this.setState({
                 bounties: res.data
             })
         })
     }
+
 
     postBounty = (newBounty) => {
         axios.post("/bounties",newBounty).then(res => {
@@ -27,6 +27,13 @@ class bountyProvider extends Component {
         })
     }
 
+    putBounty = (id, updateBounty) => {
+        axios.put(`/bounties/${id}`, updateBounty).then(res =>{
+            this.setState(preState => ({
+                bounties: preState.bounties.map(bounty => bounty._id === id ? bounty = updateBounty : bounty)
+            }))
+        })
+    }
 
     
     deleteBounty =(id)=>{
@@ -42,6 +49,7 @@ class bountyProvider extends Component {
                               postBounty: this.postBounty,
                               deleteBounty: this.deleteBounty,
                               putBounty: this.putBounty,
+                            //   bounty: this.bounty,
                              ...this.state}} >
                 {this.props.children}
             </Provider>

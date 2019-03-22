@@ -4,7 +4,7 @@ import Display from "./Display"
 const App = () => {
   return (
     <div>
-      <Form />
+      <Form button="Submit" type="add"/>
       <Display /> 
     </div>
   );

@@ -1,0 +1,26 @@
+input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: darkgoldenrod; 
+    border: 3px solid goldenrod;
+    background: lightgoldenrodyellow;
+    font-size:15px 
+   
+}
+
+form{
+    border: 2px transparent white;
+    background-color: lightskyblue;
+    opacity: 0.8;
+}
+
+button{
+    width:80px;
+    height:40px;
+    box-shadow: darkgoldenrod; 
+    border: 3px solid goldenrod;
+    background: lightgoldenrodyellow;
+    margin: 10px 10px 10px 12vw;
+    
+}
