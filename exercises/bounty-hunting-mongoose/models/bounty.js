@@ -6,7 +6,12 @@ const bountySchema = new Schema ({
     lastName: String,
     living: Boolean,
     bountAmount: Number,
-    type: String
+    type: String,
+    user: {
+        type: Schema.Types.ObjectId,
+        ref:"User",
+        required: true
+    }
 })
 
 module.exports = mongoose.model("bounty", bountySchema)
