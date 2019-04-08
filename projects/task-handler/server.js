@@ -7,9 +7,13 @@ const mongoose = require("mongoose")
 
 app.use(express.json())
 
-app.use("/api", expressJwt({secret: process.env.SECRET}))
-app.use("/api/tasks", require("./routes/taskRoutes"))
+app.use("/api", expressJwt({secret: process.env.SECRET,
+                            secret: process.env.KEYCODE_1,
+                            secret: process.env.KEYCODE_2}))
+                            
+
 app.use("/auth", require("./routes/authRoutes"))
+app.use("/api/tasks", require("./routes/taskRoutes"))
  
 
 mongoose.connect("mongodb://localhost:27017/tasks", {useNewUrlParser: true}).then(() => {
