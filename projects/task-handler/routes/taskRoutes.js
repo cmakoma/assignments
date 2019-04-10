@@ -4,16 +4,18 @@ const Task = require("../models/task")
 
 taskRoute.route("/")
     .get((req, res, next) => {
-        Task.find({user: req.res._id}, (err, tasks) => {
+        Task.find({completed: false}, (err, tasks) => {
             if(err){
                 res.status(500)
                 return next(err)
             }
+            console.log(tasks)
             return res.status(200).send(tasks)
         })
     })
 
     .post((req, res, next) => {
+        console.log(req.body)
         if(Object.keys(req.body).length !== 0){
             const newTask = new Task(req.body)
 
@@ -31,10 +33,21 @@ taskRoute.route("/")
         }
     })
 
+    taskRoute.route("/completed")
+    .get((req, res, next) => {
+        Task.find({completed: true}, (err, tasks) => {
+            if(err){
+                res.status(500)
+                return next(err)
+            }
+            console.log(tasks)
+            return res.status(200).send(tasks)
+        })
+    })
 
 taskRoute.route("/:_id")
     .put((req, res, next) => {
-        Task.findOneAndUpdate({_id: req.params._id, user: req.user._id}, req.body, (err,task) => {
+        Task.findOneAndUpdate({_id: req.params._id}, req.body,{new: true}, (err,task) => {
             if(err){
                 res.status(500)
                 return next(err)
@@ -44,12 +57,13 @@ taskRoute.route("/:_id")
     })
 
     .delete((req, res, next) => {
-        Task.findOneAndDelete({_id: req.params._id, user: req.user._id}, req.body, (err, task) => {
+        console.log(req.params)
+        Task.findOneAndDelete({_id: req.params._id}, req.body, (err, task) => {
             if(err){
                 res.status(500)
                 return next(err)
             }
-            return res.status(200)
+            return res.status(200).send('delete successful')
         })
     })
     

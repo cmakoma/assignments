@@ -15,7 +15,16 @@ const taskSchema = new Schema({
     },
     feedback: {
         type: String
+    },
+    completed: {
+        type: Boolean,
+        default: false
     }
+    // user: {
+    //     type: Schema.Types.ObjectId,
+    //     ref: "User",
+    //     required: true
+    // }
 })
 
 module.exports = mongoose.model("Task", taskSchema)

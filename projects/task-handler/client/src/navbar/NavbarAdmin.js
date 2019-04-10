@@ -10,9 +10,9 @@ class NavbarAdmin extends Component {
         const { logout } = this.props
         return (
             <div className="navbar">
-                <Link to="/tasksCreate" className="link">Create</Link>
-                <Link to="/tasks/feedback" className="link">Feedback</Link>
-                <Link to="/tasks/completed" className="link">Completed</Link>
+                <Link to="/create" className="link">Create</Link>
+                <Link to="/feedback" className="link">Feedback</Link>
+                <Link to="/completed" className="link">Completed</Link>
                 <Link onClick={logout} className="link">Logout</Link>
 
             </div>

@@ -74,7 +74,7 @@ class Auth extends Component {
                         handleSubmit={this.handleSignupSubmit}
                         btnText="Sign up" 
                     />
-                    <p onClick={this.toggleForm}>Already a user?</p>
+                    <h3 onClick={this.toggleForm}> Or Login Here</h3>
                 </>
                 :
                 <>
@@ -86,7 +86,7 @@ class Auth extends Component {
                         handleSubmit={this.handleLoginSubmit}
                         btnText="Login"
                     />
-                    <p onClick={this.toggleForm}>Not a user yet?</p>
+                    <h3 onClick={this.toggleForm}> Or Sign Up Here</h3>
 
                 </>
                 }

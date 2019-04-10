@@ -58,6 +58,53 @@ class UserProvider extends Component{
             tasks: []
         }, () => this.props.history.push("/"))
     }
+
+    addTask = newTask => {
+        dataAxios.post("/api/tasks", newTask).then(res =>{
+            this.setState(prevState => ({
+                tasks: [...prevState.tasks, res.data]
+            }))
+        }).catch(err => console.log(err))
+    }
+
+    getTasks = () =>{
+        dataAxios.get("/api/tasks").then(res => {
+            console.log(res.data)
+            this.setState({
+                tasks: res.data
+            })
+        }).catch(err => console.log(err))
+    }
+
+    getTasksCompleted = () =>{
+        dataAxios.get("/api/tasks/completed").then(res => {
+            console.log(res.data)
+            this.setState({
+                tasks: res.data
+            })
+        }).catch(err => console.log(err))
+    }
+
+
+    updateTask = (id, updatedTask) => {
+        dataAxios.put(`/api/tasks/${id}`, updatedTask).then(res => {
+            this.setState(prevState => ({
+                tasks: prevState.tasks.filter(task => task._id !== id)
+            }))
+        })
+    }
+
+
+    deleteTask = (id) => {
+        console.log(id)
+        dataAxios.delete(`/api/tasks/${id}`).then(res => {
+            this.setState(prevState => ({
+                tasks: prevState.tasks.filter(task => task._id !== id)
+            }))
+        })
+    }
+
+
     render(){
         return (
             <UserContext.Provider 
@@ -65,7 +112,12 @@ class UserProvider extends Component{
                     ...this.state,
                     signup: this.signup,
                     login: this.login,
-                    logout: this.logout
+                    logout: this.logout,
+                    addTask: this.addTask,
+                    getTasks: this.getTasks,
+                    getTasksCompleted: this.getTasksCompleted,
+                    updateTask: this.updateTask,
+                    deleteTask: this.deleteTask
                 }}>
                 {this.props.children}
             </UserContext.Provider>

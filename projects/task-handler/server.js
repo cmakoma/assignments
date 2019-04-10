@@ -7,9 +7,7 @@ const mongoose = require("mongoose")
 
 app.use(express.json())
 
-app.use("/api", expressJwt({secret: process.env.SECRET,
-                            secret: process.env.KEYCODE_1,
-                            secret: process.env.KEYCODE_2}))
+app.use("/api", expressJwt({secret: process.env.SECRET}))
                             
 
 app.use("/auth", require("./routes/authRoutes"))

@@ -8,11 +8,10 @@ class NavbarUser extends Component {
         const { logout } = this.props
         return (
             <div className="navbar">
-                <Link to="/tasks/assigned" className="link">Assigned</Link>
-                <Link to="/tasks/pending" className="link">Pending</Link>
-                <Link to="/tasks/complete" className="link">Complete</Link>
+                <Link to="/assigned" className="link">Assigned</Link>
+                <Link to="/pending" className="link">Pending</Link>
+                <Link to="/complete" className="link">Completed</Link>
                 <Link onClick={logout} className="link">Logout</Link>
-                {/* <button onClick={logout}>Logout</button> */}
             </div>
         );
     }
