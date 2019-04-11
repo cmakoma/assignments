@@ -1,0 +1,18 @@
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin:0px; 
+    position: relative;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.link{
+    text-decoration: none;
+    color: darkgrey;
+
+}
+.link:hover{
+    color: #5a9b05
+}
