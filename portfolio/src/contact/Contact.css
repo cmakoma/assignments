@@ -1,4 +1,27 @@
 img{
-    width: 100px;
-    height: 100px
+    width: 25%;
+    border-radius: 10%;
+    margin-left: 38%;
+    margin-top: 10%
+
+}
+
+h1{
+    color: darkgray;
+    font-family: cursive;
+    text-align: center
+}
+
+h3{
+    color: darkgray;
+    font-family: cursive;
+    text-align: center
+}
+
+a{
+    text-decoration: none;
+    color:darkgray;
+}
+a:hover{
+    color:#5a9b05;
 }
