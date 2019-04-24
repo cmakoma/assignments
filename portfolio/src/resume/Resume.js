@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import resume from "../images/resume.png";
+import newResume from "../images/newResume.png";
 import "./Resume.css"
 
 class Resume extends Component {
     render() {
         return (
             <div>
-                <img src={resume} alt="" className="resume"/>
+                <img src={newResume} alt="" className="resume"/>
             </div>
         );
     }

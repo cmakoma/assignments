@@ -5,14 +5,15 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h1 className="lin lin--kukuri"> WĘLCOME</h1>
-                    {/* <br/>
-                    am Christian Makoma
-                    <br/>
-                    a Full Stack Web Developer,
-                    <br/> 
-                    based is Salt Lake City, UTA 
-                </h1> */}
+                <h1 className="welcome"> WĘLCOME</h1>
+                <br/>
+                <h1>am </h1>
+                <h1 className="name">Christian Makoma</h1>
+                <br/>
+                <h1>a Full Stack Web Developer,</h1>
+                <br/> 
+                <h1>based is Salt Lake City, UTAH</h1> 
+                
             </div>
         );
     }
