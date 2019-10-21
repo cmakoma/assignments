@@ -1,0 +1,119 @@
+// Assignement 1410_Module04
+// Program Module04
+// Author Christian Makoma
+// Created Oct 16, 2019
+
+
+package m04;
+
+import java.util.List;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.Collectors;
+
+public class Module04 {
+	public static void demoCollection()
+
+	{
+
+		List<Double> numbers = Arrays.asList(0.2,0.4, 0.6, 0.25, 0.5,0.75);
+		
+		ArrayList<Double> arrayList = new ArrayList<Double>();
+		ArrayList<Double> arrayList100 = new ArrayList<Double>();
+		ArrayList<String> hexNumbers = new ArrayList<String>();
+		System.out.println("numbers: "+ numbers);
+		
+		for (int i = 0; i < numbers.size(); i++) {
+			arrayList.add(numbers.get(i));
+			arrayList.add(2*numbers.get(i));
+			
+		}
+		Collections.sort(arrayList);
+		
+		System.out.println("numbers: "+arrayList);
+		
+		
+		
+		for (int j = 0; j < arrayList.size(); j++) {
+			arrayList100.add(100*arrayList.get(j));
+			
+		}
+		Collections.sort(arrayList100);
+		System.out.println("numbers: "+ arrayList100);
+		
+		System.out.println();
+		
+		for (int k = 0; k < arrayList100.size(); k++) {
+			hexNumbers.add(arrayList100.get(k).toHexString(k));
+			
+		}
+		
+		System.out.println("hexNumbers: "+ hexNumbers);
+		Collections.sort(hexNumbers);
+		hexNumbers.stream().distinct().collect(Collectors.toList());
+		System.out.println("hexNumbers: "+hexNumbers);
+		System.out.printf("%s%n",Double.toHexString(20.0));
+		System.out.printf("%s%n",Double.toHexString(25));
+		System.out.printf("%s%n",Double.toHexString(40));
+		System.out.printf("%s%n",Double.toHexString(50));
+		System.out.printf("%s%n",Double.toHexString(60));
+		System.out.printf("%s%n",Double.toHexString(75));
+		System.out.printf("%s%n",Double.toHexString(80));
+		System.out.printf("%s%n",Double.toHexString(100));
+		System.out.printf("%s%n",Double.toHexString(120));
+		System.out.printf("%s%n",Double.toHexString(150));
+		
+		
+		
+//		
+//		 Object[] doubleNumbers = numbers.toArray();
+//		
+//		System.out.print(doubleNumbers);
+////		
+//		
+//		System.out.print("[");
+//		numbers.forEach( n -> System.out.print(100*n.floatValue()+ ", "));
+//		
+//		numbers.forEach( n -> n.floatValue());
+//		
+		
+		
+//	if(i%6==0)
+//
+//	list.add(i);
+//
+//	}
+//
+//	System.out.println(list);
+//
+//	for(j=0;j<list.size();j++)
+//
+//	{
+//
+//	list.set(j, list.get(j)/2);
+//
+//	}
+//
+//	int len=list.size();
+//
+//	for(i=-9;i<=9;i++)
+//
+//	{   
+//
+//	list.add(i);
+//
+//	}
+//
+//	Collections.sort(list, Collections.reverseOrder());
+//
+//	System.out.println(list);
+//
+//	list = removeDuplicates(list);
+//
+//	return list;
+
+	}
+
+}

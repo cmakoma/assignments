@@ -1,0 +1,96 @@
+// Assignement 1410_Module04
+// Program Module04
+// Author Christian Makoma
+// Created Oct 16, 2019
+
+
+package m04;
+
+import java.util.List;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Module04 {
+	public static void demoCollection()
+
+	{
+
+		List<Double> numbers = Arrays.asList(0.2, 0.6, 0.25, 0.5,0.75);
+		
+		ArrayList<Double> arrayList = new ArrayList<Double>();
+		System.out.println("numbers: "+ numbers);
+		
+		for (int i = 0; i < numbers.size(); i++) {
+			arrayList.add(2*numbers.get(i));
+			
+		}
+		
+		for (int j = 0; j < arrayList.size(); j++) {
+			numbers.add(arrayList.get(j));
+			
+		}
+		
+//		System.out.println(arrayList);
+		System.out.println(numbers);
+		System.out.println("numbers: "+ numbers.stream().reduce((double) 1, (a, b) -> a * b));
+		System.out.println("numbers: "+ numbers);
+		
+		System.out.println();
+		
+		System.out.println("hexNumbers: "+ numbers);
+		System.out.println("hexNumbers: "+ numbers);
+		System.out.println("hexNumbers: "+ numbers);
+		
+		
+		
+//		
+//		 Object[] doubleNumbers = numbers.toArray();
+//		
+//		System.out.print(doubleNumbers);
+////		
+//		
+//		System.out.print("[");
+//		numbers.forEach( n -> System.out.print(100*n.floatValue()+ ", "));
+//		
+//		numbers.forEach( n -> n.floatValue());
+//		
+		
+		
+//	if(i%6==0)
+//
+//	list.add(i);
+//
+//	}
+//
+//	System.out.println(list);
+//
+//	for(j=0;j<list.size();j++)
+//
+//	{
+//
+//	list.set(j, list.get(j)/2);
+//
+//	}
+//
+//	int len=list.size();
+//
+//	for(i=-9;i<=9;i++)
+//
+//	{   
+//
+//	list.add(i);
+//
+//	}
+//
+//	Collections.sort(list, Collections.reverseOrder());
+//
+//	System.out.println(list);
+//
+//	list = removeDuplicates(list);
+//
+//	return list;
+
+	}
+
+}
