@@ -1,0 +1,13 @@
+package labFile;
+
+import java.util.Scanner;
+
+public class MountainApp {
+	public static void main(String[] args) {
+		List<Mountain> mountainList = new LinkedList<>();
+		
+		try(Scanner reader= newScanner(MountainApp.class.getResourceAsStream("Mountains.csv"))){
+			System.out.println(reader.nextLine())
+		}
+	}
+}

@@ -1,0 +1,41 @@
+// Assignement 1410_Module05
+// Program Module05
+// Author Christian Makoma
+// Created Nov 13, 2019
+
+
+package m05;
+
+import java.io.PrintWriter;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Module05 {
+
+	public static void main(String[] args) {
+		String filename = "Pattern1.txt";
+		
+		try(Scanner reader= new Scanner(Module05.class.getResourceAsStream("Pattern.txt")))
+		{
+			System.out.println("Pattern.txt");
+			do {
+				System.out.println(reader.nextLine());
+				
+			} while (reader.hasNext());
+			
+			try (PrintWriter writer = new PrintWriter(filename)){
+				writer.println("blav");
+				writer.println(reader.nextLine());
+				
+				
+			} catch(Exception e) {
+				
+			}	
+		}
+		
+		
+	}
+
+}

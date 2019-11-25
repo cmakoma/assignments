@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Pattern.txt&apos; to &apos;m05.Module05.java&apos;&#x0A;- Original project: &apos;1410_Module05&apos;&#x0A;- Destination element: &apos;m05.Module05.java&apos;&#x0A;- Original element: &apos;Pattern.txt&apos;&#x0A;- Update references to refactored element" description="Move file" destination="/src&lt;m05{Module05.java" element1="Pattern.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1573691555271" units="0" version="1.0"/>
+</session>

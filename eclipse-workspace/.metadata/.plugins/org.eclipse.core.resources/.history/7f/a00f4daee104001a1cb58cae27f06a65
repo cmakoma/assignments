@@ -1,0 +1,71 @@
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.Image;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+
+// Assignement Labcoin
+// Program CoinGui
+// Author Christian Makoma
+// Created Nov 11, 2019
+
+public class CoinGui extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					CoinGui frame = new CoinGui();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public CoinGui() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 500, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
+		setContentPane(contentPane);
+		
+		Image centIcon = new ImageIcon(this.getClass().getResource("/images/UsCent.png")).getImage();
+//		Image nickelIcon = new ImageIcon(this.getClass().getResource("/UsNickel.png")).getImage();
+//		Image dimeIcon = new ImageIcon(this.getClass().getResource("/UsDime.png")).getImage();
+//		Image quarterIcon = new ImageIcon(this.getClass().getResource("/UsQuarter.png")).getImage();
+		
+		JPanel panel = new JPanel();
+		contentPane.add(panel, BorderLayout.NORTH);
+		
+		JButton btnNewButton = new JButton("");
+		panel.add(btnNewButton);
+		btnNewButton.setIcon(new ImageIcon(centIcon));
+		
+		
+		JButton button = new JButton("New button");
+		panel.add(button);
+		
+		JButton button_2 = new JButton("New button");
+		panel.add(button_2);
+		
+		JButton button_1 = new JButton("New button");
+		panel.add(button_1);
+		
+	}
+
+}

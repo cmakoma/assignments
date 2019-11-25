@@ -1,0 +1,13 @@
+// Assignement LabPrintTimeTable
+// Program PrintTimeTable
+// Author Christian Makoma
+// Created Nov 13, 2019
+
+public class PrintTimeTable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

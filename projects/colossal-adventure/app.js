@@ -22,7 +22,7 @@ function Enemy (name, attack, hp){
     this.attack = attack;
     this.hp = hp;
 }
-var randomLow = Math.floor(Math.random()*10)+10;
+var randomLow = Math.floor(Math.random()*10)+10
 var randomMedium = Math.floor(Math.random()*15)+20;
 var randomHigh = Math.floor(Math.random()*5)+40;
 

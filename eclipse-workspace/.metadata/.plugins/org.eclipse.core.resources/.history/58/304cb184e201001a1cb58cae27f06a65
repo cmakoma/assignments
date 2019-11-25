@@ -1,0 +1,17 @@
+package labWrapperClassGui;
+
+public class DemoWrapperClass {
+	
+	public String minMax() {
+		return null;
+	}
+	
+	public String toBinary(int number) {
+		return null;
+	}
+	
+	public String charProperties(char c) {
+		return null;
+	}
+	
+}

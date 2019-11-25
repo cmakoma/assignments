@@ -1,0 +1,20 @@
+// Assignement 1410Gps
+// Program GpsTest
+// Author Christian Makoma
+// Created Nov 25, 2019
+
+
+package gps;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class GpsTest {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}

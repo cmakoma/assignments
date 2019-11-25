@@ -1,0 +1,81 @@
+// Assignement 1410_Module05
+// Program Module05
+// Author Christian Makoma
+// Created Nov 13, 2019
+
+
+package m05;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Module05 {
+
+	public static void main(String[] args) {
+		List<Pattern1> pattern1List = new LinkedList<>();
+		List<Pattern2> pattern2List = new LinkedList<>();
+		
+		String filename1 = "Pattern1.txt";
+		String filename2 = "Pattern2.txt";
+		String line = null;	
+	
+		try(Scanner reader= new Scanner(Module05.class.getResourceAsStream("Pattern.txt"));
+			PrintWriter writer1 = new PrintWriter(filename1);
+			PrintWriter writer2 = new PrintWriter(filename2);)
+		{
+			
+			do {
+				line = reader.nextLine();
+				Pattern1 pattern1 = getPattern1(line);
+				Pattern2 pattern2 = getPattern2(line);
+//				System.out.println(line);
+				
+				
+				writer1.println(pattern1);
+				writer2.println(line);
+				pattern2List.add(pattern2);
+				
+				
+			} while (reader.hasNext());
+			
+			
+//			for(Pattern2 p2: pattern2List) {
+//				System.out.println(p2);
+//			}
+			
+			for(int i = pattern2List.size()-1;i  >= 0;  i-- ) {
+				writer2.println(pattern2List.get(i));
+			}
+			
+			
+			
+		} catch (Exception e) {
+		}
+		
+		
+	}
+
+	private static Pattern2 getPattern2(String line) {
+		try {
+			return new Pattern2(line);
+		} catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+			System.err.println(line + ".. cound not be read in as a mountain.");
+		}
+		return null;
+	}
+
+	private static Pattern1 getPattern1(String line) {
+		try {
+			return new Pattern1(line);
+		} catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
+			System.err.println(line + ".. cound not be read in as a mountain.");
+		}
+		return null;
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+// Assignement LabExceptionHandilng
+// Program LabExceptionHandilng
+// Author Christian Makoma
+// Created Nov 12, 2019
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class LabExceptionHandilng {
+
+	public static void main(String[] args) {
+		try {
+			int digit = numberFromUser();
+			int result = sevenModulusN(digit);
+			System.out.printf("7 %% %.1f = %.1f", (float)digit, (float)result);
+		}catch(InputMismatchException e){
+			System.out.println("The number entered needs to be a whole number");
+		}
+		
+	}
+	
+	private static int numberFromUser(){
+		@SuppressWarnings("resource")
+		Scanner input = new Scanner(System.in);
+		System.out.print("number: ");
+		return input.nextInt();
+	}
+	private static int sevenModulusN(int number){
+		return 7 % number;
+	}
+
+}

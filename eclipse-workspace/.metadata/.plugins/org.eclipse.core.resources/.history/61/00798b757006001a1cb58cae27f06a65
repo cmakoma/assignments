@@ -1,0 +1,24 @@
+package labSerialization;
+
+import java.awt.Color;
+
+public class LabSerialization {
+    public static void main(String[] args) {
+        ListVsSetDemo demo = new ListVsSetDemo(
+                new ColoredSquare(4, Color.RED),
+                new ColoredSquare(6, Color.BLUE),
+                new ColoredSquare(4, Color.RED),
+                new ColoredSquare(8, Color.YELLOW));
+
+        testDemo(demo);
+
+    };
+
+    private static void testDemo(ListVsSetDemo demo) {
+        System.out.println("List:");
+        System.out.println(demo.getListElements());
+        System.out.println("Set:");
+        System.out.println(demo.getSetElements());
+    }
+
+}

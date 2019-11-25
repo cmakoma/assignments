@@ -1,0 +1,29 @@
+// Assignement 1410_Module05
+// Program Module05
+// Author Christian Makoma
+// Created Nov 13, 2019
+
+
+package m05;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class Module05 {
+
+	public static void main(String[] args) {
+//		List<Pattern1> pattern1List = new LinkedList<>();
+		String line = null;
+		try(Scanner reader= new Scanner(Module05.class.getResourceAsStream("Pattern.txt")))
+		{
+			System.out.println(Module05.class.getResourceAsStream("Pattern.txt"));
+			do {
+				System.out.println(reader.nextLine());
+				
+			} while (reader.hasNext());
+		}
+	}
+
+}

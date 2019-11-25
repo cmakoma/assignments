@@ -1,0 +1,7 @@
+package labFile;
+
+public class MountainApp {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,16 @@
+// Assignement 1410_Module05
+// Program Module05
+// Author Christian Makoma
+// Created Nov 13, 2019
+
+
+package m05;
+
+public class Module05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

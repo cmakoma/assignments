@@ -1,0 +1,13 @@
+// Assignement 1410Gps
+// Program Gps
+// Author Christian Makoma
+// Created Nov 24, 2019
+
+
+package gps;
+
+import java.util.ArrayList;
+
+public class Gps {
+	private ArrayList<GpsPosition> route;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GpsPositionTest" project="1410Gps" tests="8" started="8" failures="0" errors="0" ignored="0">
+  <testsuite name="gps.GpsPositionTest" time="0.0" displayname="GpsPositionTest" uniqueid="[engine:junit-vintage]/[runner:gps.GpsPositionTest]">
+    <testcase name="testToString" classname="gps.GpsPositionTest" time="0.0" displayname="testToString" uniqueid="[engine:junit-vintage]/[runner:gps.GpsPositionTest]/[test:testToString(gps.GpsPositionTest)]"/>
+    <testcase name="testGpsPositionInvalidLongitude" classname="gps.GpsPositionTest" time="0.0" displayname="testGpsPositionInvalidLongitude" uniqueid="[engine:junit-vintage]/[runner:gps.GpsPositionTest]/[test:testGpsPositionInvalidLongitude(gps.GpsPositionTest)]"/>
+    <testcase name="testGetLatitude" classname="gps.GpsPositionTest" time="0.0" displayname="testGetLatitude" uniqueid="[engine:junit-vintage]/[runner:gps.GpsPositionTest]/[test:testGetLatitude(gps.GpsPositionTest)]"/>
+    <testcase name="testGetElevation" classname="gps.GpsPositionTest" time="0.0" displayname="testGetElevation" uniqueid="[engine:junit-vintage]/[runner:gps.GpsPositionTest]/[test:testGetElevation(gps.GpsPositionTest)]"/>
+    <testcase name="testGetLongitude" classname="gps.GpsPositionTest" time="0.0" displayname="testGetLongitude" uniqueid="[engine:junit-vintage]/[runner:gps.GpsPositionTest]/[test:testGetLongitude(gps.GpsPositionTest)]"/>
+    <testcase name="testGpsPositionInvalidLatitude" classname="gps.GpsPositionTest" time="0.0" displayname="testGpsPositionInvalidLatitude" uniqueid="[engine:junit-vintage]/[runner:gps.GpsPositionTest]/[test:testGpsPositionInvalidLatitude(gps.GpsPositionTest)]"/>
+    <testcase name="testToStringRounding" classname="gps.GpsPositionTest" time="0.0" displayname="testToStringRounding" uniqueid="[engine:junit-vintage]/[runner:gps.GpsPositionTest]/[test:testToStringRounding(gps.GpsPositionTest)]"/>
+    <testcase name="testGpsPosition" classname="gps.GpsPositionTest" time="0.0" displayname="testGpsPosition" uniqueid="[engine:junit-vintage]/[runner:gps.GpsPositionTest]/[test:testGpsPosition(gps.GpsPositionTest)]"/>
+  </testsuite>
+</testrun>

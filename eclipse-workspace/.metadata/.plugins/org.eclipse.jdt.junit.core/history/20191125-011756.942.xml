@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GpsTest" project="1410Gps" tests="13" started="13" failures="0" errors="0" ignored="0">
+  <testsuite name="gps.GpsTest" time="0.0" displayname="GpsTest" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]">
+    <testcase name="testGetRoute" classname="gps.GpsTest" time="0.0" displayname="testGetRoute" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testGetRoute(gps.GpsTest)]"/>
+    <testcase name="testGps" classname="gps.GpsTest" time="0.0" displayname="testGps" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testGps(gps.GpsTest)]"/>
+    <testcase name="testDistanceTraveledMoabToDenver" classname="gps.GpsTest" time="0.0" displayname="testDistanceTraveledMoabToDenver" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testDistanceTraveledMoabToDenver(gps.GpsTest)]"/>
+    <testcase name="testDistanceTraveledSlcToDenver" classname="gps.GpsTest" time="0.0" displayname="testDistanceTraveledSlcToDenver" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testDistanceTraveledSlcToDenver(gps.GpsTest)]"/>
+    <testcase name="testReset" classname="gps.GpsTest" time="0.0" displayname="testReset" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testReset(gps.GpsTest)]"/>
+    <testcase name="testDistanceTraveledNoTravel" classname="gps.GpsTest" time="0.0" displayname="testDistanceTraveledNoTravel" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testDistanceTraveledNoTravel(gps.GpsTest)]"/>
+    <testcase name="testDistanceTraveledSlcToMoab" classname="gps.GpsTest" time="0.0" displayname="testDistanceTraveledSlcToMoab" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testDistanceTraveledSlcToMoab(gps.GpsTest)]"/>
+    <testcase name="testPositionAfterUpdate" classname="gps.GpsTest" time="0.0" displayname="testPositionAfterUpdate" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testPositionAfterUpdate(gps.GpsTest)]"/>
+    <testcase name="testRandomUpdate" classname="gps.GpsTest" time="0.0" displayname="testRandomUpdate" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testRandomUpdate(gps.GpsTest)]"/>
+    <testcase name="testResetAfterUpdate" classname="gps.GpsTest" time="0.0" displayname="testResetAfterUpdate" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testResetAfterUpdate(gps.GpsTest)]"/>
+    <testcase name="testPosition" classname="gps.GpsTest" time="0.0" displayname="testPosition" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testPosition(gps.GpsTest)]"/>
+    <testcase name="testUpdate" classname="gps.GpsTest" time="0.0" displayname="testUpdate" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testUpdate(gps.GpsTest)]"/>
+    <testcase name="testUpdateMultipleTimes" classname="gps.GpsTest" time="0.0" displayname="testUpdateMultipleTimes" uniqueid="[engine:junit-vintage]/[runner:gps.GpsTest]/[test:testUpdateMultipleTimes(gps.GpsTest)]"/>
+  </testsuite>
+</testrun>

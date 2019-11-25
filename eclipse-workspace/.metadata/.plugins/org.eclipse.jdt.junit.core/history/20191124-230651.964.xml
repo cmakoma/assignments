@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GpsPositionTest" project="1410Gps" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="gps.GpsPositionTest" time="0.017" displayname="GpsPositionTest" uniqueid="[engine:junit-jupiter]/[class:gps.GpsPositionTest]">
+    <testcase name="testToString" classname="gps.GpsPositionTest" time="0.006" displayname="testToString()" uniqueid="[engine:junit-jupiter]/[class:gps.GpsPositionTest]/[method:testToString()]"/>
+    <testcase name="testGetLatitude" classname="gps.GpsPositionTest" time="0.001" displayname="testGetLatitude()" uniqueid="[engine:junit-jupiter]/[class:gps.GpsPositionTest]/[method:testGetLatitude()]"/>
+    <testcase name="testGetElevation" classname="gps.GpsPositionTest" time="0.001" displayname="testGetElevation()" uniqueid="[engine:junit-jupiter]/[class:gps.GpsPositionTest]/[method:testGetElevation()]"/>
+    <testcase name="testGetLongitude" classname="gps.GpsPositionTest" time="0.001" displayname="testGetLongitude()" uniqueid="[engine:junit-jupiter]/[class:gps.GpsPositionTest]/[method:testGetLongitude()]"/>
+    <testcase name="testToStringRounding" classname="gps.GpsPositionTest" time="0.001" displayname="testToStringRounding()" uniqueid="[engine:junit-jupiter]/[class:gps.GpsPositionTest]/[method:testToStringRounding()]"/>
+    <testcase name="testGpsPosition" classname="gps.GpsPositionTest" time="0.007" displayname="testGpsPosition()" uniqueid="[engine:junit-jupiter]/[class:gps.GpsPositionTest]/[method:testGpsPosition()]"/>
+  </testsuite>
+</testrun>
